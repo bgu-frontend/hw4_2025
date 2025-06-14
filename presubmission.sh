@@ -39,6 +39,7 @@ expected_paths=(
   "./backend/models"
   "./backend/tests/crud.test.ts"
   "./backend/package.json"
+  "./attacker_server.js"
 )
 
 echo "Checking folder structure..."
