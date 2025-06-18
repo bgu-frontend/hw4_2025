@@ -1,5 +1,5 @@
 # HW4: Rich Notes, XSS, and Web Security
-
+`Note: Changes are marked in yellow`
 ## What is XSS?
 Cross-Site Scripting (XSS) is a security vulnerability that allows attackers to inject malicious scripts into web pages viewed by other users. XSS can be exploited to steal information, hijack user sessions, or perform actions on behalf of users without their consent. This exercise demonstrates how adding rich text (HTML) support to a web app can introduce XSS vulnerabilities, and how to defend against them using sanitization.
 
@@ -56,7 +56,8 @@ Requirements for AI usage:
 
 ### 3. Sanitizer & Defense
 - Implement a sanitizer function that removes dangerous tags/attributes (e.g., `<script>`, `onerror`, etc.) but allows safe formatting tags.
-- Add a radio button in the frontend to toggle between sanitized and raw HTML rendering for notes.
+- <span style="background-color: yellow; color: black;">The sanitizer should work by default and not allow an XSS attack.</span>
+- <span style="background-color: yellow; color: black;">Add a button in the frontend to turn off the sanitizer and allow raw HTML rendering for notes.</span>
 - When sanitization is ON, XSS/keylogger should not work; when OFF, it should.
 
 ### 4. Testing
